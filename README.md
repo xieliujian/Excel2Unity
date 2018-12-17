@@ -16,10 +16,9 @@
 
 * 代码修改
 	
-	* 打开`Config.py`文件, 修改几个配置属性
+	打开`Config.py`文件, 修改几个配置属性
 	
 	 ```python
-
     # Excel文件目录
 	EXCEL_DIR = "./Excel"
     
@@ -27,8 +26,7 @@
 	UnityDataDir = "./../ExcelTest/Assets/StreamingAssets/Config/"
 	
 	# 代码生成路径
-	UnityCodeDir = "./../ExcelTest/Assets/Scripts/Config/"
-	
+	UnityCodeDir = "./../ExcelTest/Assets/Scripts/Config/"	
     ```
 
 
