@@ -46,35 +46,16 @@
 	`int,float,bool,string,list[int],list[float],list[string],map[int|int],map[int|float],map[int|string],map[string|int],map[string|float],map[string|string]`
 
 	这些类型可供选择, 涵盖了常用的类型
-	
-# Excel2Unity
-       
-*   Excel配置使用
-    
-    ![](https://raw.githubusercontent.com/xieliujian/Excel2UnityInternal/master/Snapshots/QQ%E6%88%AA%E5%9B%BE20170928092831.bmp)
-    
-    * Excel表头有5行
-    
-    * 第一行为字段注释，在生成代码中显示
-    
-    * 第二行有三个字段可以选择 `C, S, CS` , 分别用来代码这个字段是客户端
-    所有，服务器所有，还是客户端服务器共有
-    
-    * 第三行是字段的类型, 目前有 `Int, float, string, List[int], List[float], 
-     List[string], Map[int|int], Map[int|float], Map[int|string], 
-     Map[string|int], Map[string|float], Map[string|string]`这些类型可供选择,
-     应该是涵盖了常用的类型，字段类型后期可以增加
-     
-    * 第四行填写字段名
-    
-    * 第五行是指字段是否为key，这个表格工具支持多个字段`key`和没有`key`
+
+	* 第四行填写字段名
+
+	* 第五行是指字段是否为key，这个表格工具支持多个字段`key`和没有`key`
         
         * 没有`key`的情况下，生成的表格的数据管理类的数据使用`List`管理
         
         * 有一个`key`的情况下，生成的表格的数据管理类的数据使用`Dictionary`管理
         
-        * 多个`key`的情况下，也是使用`Dictionary`来管理，但是获取数据的函数会有不同
-        可能会有多个形参
+        * 多个`key`的情况下，也是使用`List`来管理，但是获取数据的函数会有不同可能会有多个形参
     
     
     
