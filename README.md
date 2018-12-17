@@ -12,7 +12,7 @@
     	        
     * 2, IDE使用的是`pycharm`, 推荐使用`pycharm`开发python
     
-	* 2, 导入xlrd包，用来读取Excel文件
+	* 2, 导入`xlrd`包，用来读取Excel文件
 
 * 代码修改
 	
