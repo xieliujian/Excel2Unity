@@ -43,6 +43,7 @@ public class Test3Cfg
 public class Test3CfgMgr
 {
     private static Test3CfgMgr mInstance;
+    
     public static Test3CfgMgr Instance
     {
         get
@@ -56,7 +57,12 @@ public class Test3CfgMgr
         }
     }
 
-    public List<Test3Cfg> mList = new List<Test3Cfg>();
+    private List<Test3Cfg> mList = new List<Test3Cfg>();
+    
+    public List<Test3Cfg> List
+    {
+        get {return mList;}
+    }
 
     public void Deserialize (DynamicPacket packet)
     {

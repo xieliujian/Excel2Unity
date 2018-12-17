@@ -43,6 +43,7 @@ public class Test1Cfg
 public class Test1CfgMgr
 {
     private static Test1CfgMgr mInstance;
+    
     public static Test1CfgMgr Instance
     {
         get
@@ -57,6 +58,11 @@ public class Test1CfgMgr
     }
 
     private Dictionary<int, Test1Cfg> mDict = new Dictionary<int, Test1Cfg>();
+    
+    public Dictionary<int, Test1Cfg> Dict
+    {
+        get {return mDict;}
+    }
 
     public void Deserialize (DynamicPacket packet)
     {

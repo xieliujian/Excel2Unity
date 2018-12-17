@@ -59,6 +59,7 @@ class UnityCodeGen:
         filecontent += "{\n"
 
         filecontent += UnityCodeGen.Tab(1) + "private static " + tableclassmgrname + " mInstance;\n"
+        filecontent += UnityCodeGen.Tab(1) + "\n"
         filecontent += UnityCodeGen.Tab(1) + "public static " + tableclassmgrname + " Instance\n"
         filecontent += UnityCodeGen.Tab(1) + "{\n"
         filecontent += UnityCodeGen.Tab(2) + "get\n"
@@ -84,13 +85,23 @@ class UnityCodeGen:
         uselist = (keylen != 1)
         filecontent += "\n"
         if uselist:
-            filecontent += UnityCodeGen.Tab(1) + "public List<" + tableclassname +  \
-                           "> mList = new List<" + tableclassname + ">();\n"
+            filecontent += UnityCodeGen.Tab(1) + "private List<{0}> mList = new List<{0}>();\n".format(tableclassname)
         else:
             fieldtype = table.cell(2, keylist[0]).value
             keytype = FieldFormat.Type2format[fieldtype][1]
-            filecontent += UnityCodeGen.Tab(1) + "private Dictionary<{0}, ".format(keytype) + tableclassname + \
-                           "> mDict = new Dictionary<{0}, ".format(keytype) + tableclassname + ">();\n"
+            filecontent += UnityCodeGen.Tab(1) + "private Dictionary<{0}, {1}> mDict = new Dictionary<{0}, {1}>();\n".format(keytype, tableclassname)
+
+        filecontent += UnityCodeGen.Tab(1) + "\n"
+        if uselist:
+            filecontent += UnityCodeGen.Tab(1) + "public List<{0}> List\n".format(tableclassname)
+        else:
+            filecontent += UnityCodeGen.Tab(1) + "public Dictionary<{0}, {1}> Dict\n".format(keytype, tableclassname)
+        filecontent += UnityCodeGen.Tab(1) + "{\n"
+        if uselist:
+            filecontent += UnityCodeGen.Tab(2) + "get {return mList;}\n"
+        else:
+            filecontent += UnityCodeGen.Tab(2) + "get {return mDict;}\n"
+        filecontent += UnityCodeGen.Tab(1) + "}\n"
 
         # Deserialize函数
         filecontent += "\n"
