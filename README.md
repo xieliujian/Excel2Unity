@@ -10,7 +10,7 @@
     	        
     * 2, IDE使用的是`pycharm`, 推荐使用`pycharm`开发python
     
-	* 2, 导入`xlrd`包，用来读取Excel文件
+	* 3, 导入`xlrd`包，用来读取Excel文件
 
 * 代码修改
 	
@@ -27,7 +27,7 @@
 	UnityCodeDir = "./../ExcelTest/Assets/Scripts/Config/"	
     ```
 	
-	在`Excel2Unity`工程目录下，使用`WinRun.bat`批处理文件，执行生成数据和文件
+	在`Excel2Unity`工程目录下，使用`WinRun.bat`批处理文件，执行生成数据和代码
 
 * Excel配表使用
 
