@@ -58,3 +58,7 @@
 	* 对于List字段，分隔符是使用的` ; `(分号)
 
 	* 对于Map字段，一级分隔符是` | `(竖斜杠), 二级分隔符是` ; `(分号)
+
+# 这个工具的知乎文章
+
+	[https://zhuanlan.zhihu.com/p/52591971](https://zhuanlan.zhihu.com/p/52591971](https://zhuanlan.zhihu.com/p/52591971](https://zhuanlan.zhihu.com/p/52591971 "知乎文章")
