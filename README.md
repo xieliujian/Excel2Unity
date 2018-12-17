@@ -41,11 +41,7 @@
 
 	* 第二行有三个字段可以选择 `C, S, CS` , 分别用来代码这个字段是`客户端所有，服务器所有，还是客户端服务器共有`
 
-	* 第三行是字段的类型, 目前有
-
-	`int,float,bool,string,list[int],list[float],list[string],map[int|int],map[int|float],map[int|string],map[string|int],map[string|float],map[string|string]`
-
-	这些类型可供选择, 涵盖了常用的类型
+	* 第三行是字段的类型, 目前有`int,float,bool,string,list[int],list[float],list[string],map[int|int],map[int|float],map[int|string],map[string|int],map[string|float],map[string|string]`这些类型可供选择, 涵盖了常用的类型
 
 	* 第四行填写字段名
 
