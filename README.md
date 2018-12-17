@@ -4,7 +4,7 @@
 
 * 功能
 
-	* 将Excel配表数据导入Unity中，生成二进制配表数据已经相应的读取代码
+	* 将Excel配表数据导入Unity中，生成二进制配表数据以及相应的读取代码
    
 * 安装须知
 	
@@ -28,7 +28,12 @@
 	# 代码生成路径
 	UnityCodeDir = "./../ExcelTest/Assets/Scripts/Config/"	
     ```
+	
+	在`Excel2Unity`工程目录下，使用`WinRun.bat`批处理文件，执行需要的数据和文件
 
+* Excel配表使用
+
+	
 
 # Excel2Unity
        
