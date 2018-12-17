@@ -20,8 +20,8 @@ DataFileName = "Config.data"
 
 # --------------------------------Unity--------------------------------
 
-# 数据路径
+# 数据生成路径
 UnityDataDir = "./../ExcelTest/Assets/StreamingAssets/Config/"
 
-# 代码目录
+# 代码生成路径
 UnityCodeDir = "./../ExcelTest/Assets/Scripts/Config/"
