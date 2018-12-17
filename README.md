@@ -43,19 +43,7 @@
 
 	* 第三行是字段的类型, 目前有
 
-	`int'
-	`float`
-	`bool`
-	`string`
-	`list[int]`
-	`list[float]`
-	`list[string]`
-	`map[int|int]`
-	`map[int|float]`
-	`map[int|string]`
-	`map[string|int]`
-	`map[string|float]`
-	`map[string|string]`
+	`int,float,bool,string,list[int],list[float],list[string],map[int|int],map[int|float],map[int|string],map[string|int],map[string|float],map[string|string]`
 
 	这些类型可供选择, 涵盖了常用的类型
 	
