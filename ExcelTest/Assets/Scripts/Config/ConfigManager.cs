@@ -1,4 +1,8 @@
 
+//-----------------------------------------------
+//              生成代码不要修改
+//-----------------------------------------------
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

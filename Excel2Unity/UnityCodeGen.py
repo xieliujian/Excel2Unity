@@ -17,6 +17,10 @@ class UnityCodeGen:
 
         # -----------------------table cfg class-----------------------
         filecontent = "\n"
+        filecontent += "//-----------------------------------------------\n"
+        filecontent += "//              生成代码不要修改\n"
+        filecontent += "//-----------------------------------------------\n"
+        filecontent += "\n"
         filecontent += "using System.Collections.Generic;\n"
         filecontent += "using System.IO;\n"
         filecontent += "using System.Text;\n"
@@ -214,6 +218,10 @@ class UnityCodeGen:
         path = UnityCodeDir + "ConfigManager.cs"
 
         filecontent = "\n"
+        filecontent += "//-----------------------------------------------\n"
+        filecontent += "//              生成代码不要修改\n"
+        filecontent += "//-----------------------------------------------\n"
+        filecontent += "\n"
         filecontent += "using System.Collections;\n"
         filecontent += "using System.Collections.Generic;\n"
         filecontent += "using UnityEngine;\n"
